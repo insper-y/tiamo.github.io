@@ -82,8 +82,8 @@
 </div>
 
 <script>
-// ========== 已修改为你的后端地址 ==========
-const VM_IP = "192.168.1.55"
+// 改成你的虚拟机IP
+const VM_IP = "192.168.xxx.xxx"
 
 async function login() {
   const user = document.getElementById('username').value.trim()
@@ -120,6 +120,7 @@ async function login() {
   }
 }
 
+// 回车登录（手机体验更好）
 document.addEventListener('keydown', e => {
   if (e.key === 'Enter') login()
 })
